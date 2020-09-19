@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image, Button } from "react-native";
-import { TextInput } from "react-native-gesture-handler";
+import {
+  TextInput,
+  TouchableNativeFeedback,
+} from "react-native-gesture-handler";
 
 export default function Login() {
   const [loading, setLoading] = useState(false);
@@ -38,7 +41,11 @@ export default function Login() {
           <TextInput secureTextEntry style={styles.input} />
         </View>
         <View style={{ marginVertical: 10, marginTop: 25 }}>
-          <Button title="Login" style={{ width: 200 }} />
+          <TouchableNativeFeedback>
+            <View style={styles.btn}>
+              <Text>Login</Text>
+            </View>
+          </TouchableNativeFeedback>
         </View>
       </View>
     </View>
@@ -88,5 +95,14 @@ const styles = StyleSheet.create({
     borderBottomColor: "gold",
     borderBottomWidth: 1,
     width: "60%",
+  },
+  btn: {
+    backgroundColor: "#FFF",
+    width: 200,
+    color: "blue",
+    justifyContent: "center",
+    alignItems: "center",
+    height: 50,
+    borderRadius: 4,
   },
 });
