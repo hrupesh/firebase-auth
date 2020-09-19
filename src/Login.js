@@ -19,9 +19,20 @@ export default function Login() {
           <Text>Coming Soon....</Text>
         </View>
       ) : null}
-      <View>
-        <Text>Email:</Text>
-        <TextInput placeholder="Enter your email id" />
+      <View style={styles.form}>
+        <Image
+          source={{
+            uri:
+              "https://4.bp.blogspot.com/-rtNRVM3aIvI/XJX_U07Z-II/AAAAAAAAJXY/YpdOo490FTgdKOxM4qDG-2-EzcNFAWkKACK4BGAYYCw/s1600/logo%2Bfirebase%2Bicon.png",
+          }}
+          style={{ height: 150, width: 150, marginBottom: 20 }}
+          resizeMethod="resize"
+          resizeMode="contain"
+        />
+        <View style={styles.row}>
+          <Text style={styles.label}>Email:</Text>
+          <TextInput style={styles.input} keyboardType="email-address" />
+        </View>
       </View>
     </View>
   );
@@ -38,7 +49,35 @@ const styles = StyleSheet.create({
     height: 500,
     width: 500,
   },
-  screen:{
-    padding:10
-  }
+  screen: {
+    padding: 10,
+  },
+  form: {
+    backgroundColor: "#512df8",
+    padding: 20,
+    marginTop: 25,
+    elevation: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  row: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  label: {
+    fontSize: 16,
+    color: "#fff",
+    letterSpacing: 2,
+    marginRight: 5,
+  },
+  input: {
+    fontSize: 16,
+    color: "#fff",
+    letterSpacing: 2,
+    padding: 5,
+    borderBottomColor: "yellow",
+    borderBottomWidth: 1,
+    width: 275,
+  },
 });
