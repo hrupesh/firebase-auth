@@ -40,10 +40,14 @@ export default function Login() {
           <Text style={styles.label}>Password:</Text>
           <TextInput secureTextEntry style={styles.input} />
         </View>
-        <View style={{ marginVertical: 10, marginTop: 25 }}>
+        <View style={{ marginVertical: 10, marginTop: 50 }}>
           <TouchableNativeFeedback>
             <View style={styles.btn}>
-              <Text>Login</Text>
+              <Text
+                style={{ color: "#512DF8", fontSize: 18, letterSpacing: 6 }}
+              >
+                LOGIN
+              </Text>
             </View>
           </TouchableNativeFeedback>
         </View>
@@ -77,7 +81,7 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "baseline",
     width: "100%",
     marginVertical: 5,
   },
@@ -98,8 +102,7 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: "#FFF",
-    width: 200,
-    color: "blue",
+    width: 300,
     justifyContent: "center",
     alignItems: "center",
     height: 50,
