@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
 export default function Login() {
@@ -33,6 +33,13 @@ export default function Login() {
           <Text style={styles.label}>Email:</Text>
           <TextInput style={styles.input} keyboardType="email-address" />
         </View>
+        <View style={styles.row}>
+          <Text style={styles.label}>Password:</Text>
+          <TextInput secureTextEntry style={styles.input} />
+        </View>
+        <View style={{ marginVertical: 10, marginTop: 25 }}>
+          <Button title="Login" style={{ width: 200 }} />
+        </View>
       </View>
     </View>
   );
@@ -62,8 +69,10 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
+    width: "100%",
+    marginVertical: 5,
   },
   label: {
     fontSize: 16,
@@ -72,12 +81,12 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   input: {
-    fontSize: 16,
-    color: "#fff",
+    fontSize: 20,
+    color: "yellow",
     letterSpacing: 2,
     padding: 5,
-    borderBottomColor: "yellow",
+    borderBottomColor: "gold",
     borderBottomWidth: 1,
-    width: 275,
+    width: "60%",
   },
 });
