@@ -26,7 +26,8 @@ export default function App() {
     };
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-  }, []);
+    alert("Connected to firebase");
+  });
 
   return (
     <NavigationContainer>
