@@ -4,6 +4,7 @@ import {
   TextInput,
   TouchableNativeFeedback,
 } from "react-native-gesture-handler";
+import * as Animatable from "react-native-animatable";
 
 export default function Login() {
   const [loading, setLoading] = useState(false);
@@ -11,7 +12,11 @@ export default function Login() {
   return (
     <View style={styles.screen}>
       {loading ? (
-        <View style={styles.container}>
+        <Animatable.View
+          animation="pulse"
+          duration={4}
+          style={styles.container}
+        >
           <Image
             style={styles.loader}
             source={{
@@ -20,7 +25,7 @@ export default function Login() {
             }}
           />
           <Text>Coming Soon....</Text>
-        </View>
+        </Animatable.View>
       ) : null}
       <View style={styles.form}>
         <Image
