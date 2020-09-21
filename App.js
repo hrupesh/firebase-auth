@@ -13,21 +13,21 @@ import Profile from "./src/Profile";
 const Stack = createStackNavigator();
 
 export default function App() {
-  useEffect(() => {
-    var firebaseConfig = {
-      apiKey: "AIzaSyCKGIchRk-lvSITqGD5jEA8P6XVsH5r9Os",
-      authDomain: "auth-rn-f704e.firebaseapp.com",
-      databaseURL: "https://auth-rn-f704e.firebaseio.com",
-      projectId: "auth-rn-f704e",
-      storageBucket: "auth-rn-f704e.appspot.com",
-      messagingSenderId: "784656238102",
-      appId: "1:784656238102:web:854bda6749e26cf7bc5737",
-      measurementId: "G-MNSKM4SYKS",
-    };
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    alert("Firebase Connection code executed!");
-  });
+  // useEffect(() => {
+  //   var firebaseConfig = {
+  //     apiKey: "AIzaSyCKGIchRk-lvSITqGD5jEA8P6XVsH5r9Os",
+  //     authDomain: "auth-rn-f704e.firebaseapp.com",
+  //     databaseURL: "https://auth-rn-f704e.firebaseio.com",
+  //     projectId: "auth-rn-f704e",
+  //     storageBucket: "auth-rn-f704e.appspot.com",
+  //     messagingSenderId: "784656238102",
+  //     appId: "1:784656238102:web:854bda6749e26cf7bc5737",
+  //     measurementId: "G-MNSKM4SYKS",
+  //   };
+  //   firebase.initializeApp(firebaseConfig);
+  //   firebase.analytics();
+  //   alert("Firebase Connection code executed!");
+  // });
 
   return (
     <NavigationContainer>
