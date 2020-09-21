@@ -7,7 +7,7 @@ import {
 import * as Animatable from "react-native-animatable";
 
 export default function Login() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <View style={styles.screen}>
