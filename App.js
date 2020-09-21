@@ -26,7 +26,7 @@ export default function App() {
     };
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-    // alert("Connected to firebase");
+    alert("We don't know if we are connected to firebase yet");
   });
 
   return (
