@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import * as firebase from "firebase/app";
-import "firebase/analytics";
-import "firebase/auth";
-import "firebase/firestore";
+// import * as firebase from "firebase/app";
+// import "firebase/analytics";
+// import "firebase/auth";
+// import "firebase/firestore";
 import Login from "./src/Login";
 import Profile from "./src/Profile";
 
